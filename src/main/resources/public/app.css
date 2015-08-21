@@ -1,16 +1,16 @@
-a:link {
+button a:link {
 	color: white;
     text-decoration: none;
 }
-a:visited{
+button a:visited{
 	color: white;
     text-decoration: none;
 }
-a:hover{
+button a:hover{
 	color: white;
     text-decoration: none;
 }
-a:active{
+button a:active{
 	color: white;
     text-decoration: none;
 }
