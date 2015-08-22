@@ -1,16 +1,7 @@
-button a:link {
+#id {
 	color: white;
-    text-decoration: none;
 }
-button a:visited{
+
+.btn {
 	color: white;
-    text-decoration: none;
-}
-button a:hover{
-	color: white;
-    text-decoration: none;
-}
-button a:active{
-	color: white;
-    text-decoration: none;
 }
