@@ -46,7 +46,7 @@ public class WordTest {
   @Test
   public void addDefinition_addsDefinitionToList() {
     Word testWord = new Word("java");
-    Definition testDefinition = new Definition("the main island of Indonesia");
+    Definition testDefinition = new Definition("noun", "the main island of Indonesia");
     testWord.addDefinition(testDefinition);
     assertTrue(testWord.getDefinitions().contains(testDefinition));
   }
