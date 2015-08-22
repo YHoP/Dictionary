@@ -1,10 +1,20 @@
-<h3>Add a Definition to $word.getWord()</h3>
+<h2>Add a Definition to $word.getWord()</h2>
 
 <form action="/definitions" method="post">
   <input id="wordId" name="wordId" type="hidden" value="$word.getId()">
 
   <div class="form-group">
-    <label for="description">Make</label>
+      <label for="partSpeech"> Parts of speech: </label>
+      <input type="radio" name="partSpeech" value="noun" checked> noun
+      <input type="radio" name="partSpeech" value="verb"> verb
+      <input type="radio" name="partSpeech" value="adjective"> adjective
+      <input type="radio" name="partSpeech" value="adverb"> adverb
+      <input type="radio" name="partSpeech" value="pronoun"> pronoun
+      <input type="radio" name="partSpeech" value="preposition"> preposition
+      <input type="radio" name="partSpeech" value="conjunction"> conjunction
+      <input type="radio" name="partSpeech" value="nterjection"> nterjection
+      <br>
+    <label for="description"> Definition: </label>
     <input id="description" name="description" type="text" class="form-control">
   </div>
 

@@ -1,13 +1,17 @@
-<h2>$word.getWord()</h2><br>
-<h3>Here are all the definitions:</h3><br>
+<h2>$word.getWord()</h2>
+<h4>Here are all the definitions:</h4><br>
 
+<ul class="list-group">
 #foreach($definition in $word.getDefinitions())
- <p>$definition.getDefinition()</a></p><br>
+ <li class="list-group-item list-group-item-success">$definition.getDefinition()</li>
 #end
+<ul>
 
 <br>
-<a href="/words/$word.getId()/definitions/new">Add a new definition</a>
-<br>
-<a href="/words/new">Add a new word</a>
-<br>
-<a href="/">Return to Main Page</a>
+
+<p>
+<button type="button" class="btn btn-info"><a id="btn" href="/words/$word.getId()/definitions/new">Add a new definition</a></button>
+<button type="button" class="btn btn-success"><a id="btn" href="/words/new">Add a new word</a></button>
+<button type="button" class="btn btn-primary"><a id="btn" href="/words">View word list</a></button>
+<button type="button" class="btn btn-warning"><a id="btn" href="/"> Home </a></button>
+</p>

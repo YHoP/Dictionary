@@ -70,7 +70,8 @@ public class App {
     }
 
     String description = request.queryParams("description");
-    Definition newDefinition = new Definition(description);
+    String partSpeech = request.queryParams("partSpeech");
+    Definition newDefinition = new Definition(partSpeech, description);
 
     definitions.add(newDefinition);
 
